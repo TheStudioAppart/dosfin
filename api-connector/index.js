@@ -14,9 +14,9 @@ const Inert = require('inert');
 const HemeraJoi = require('hemera-joi');
 
 // Configuration
-const cfg, { hemera, nats, plugins } = require('./config/server');
+const { api, hemera, nats, plugins, swagger } = require('./config/server');
 
-const server = new Hapi.server(cfg.server);
+const server = new Hapi.server(api);
 
 
 /* Authentication --------------------------------------------------------------------------------------------------- */
@@ -53,7 +53,7 @@ const start = async () => {
 
     /* import routes */
     let routes = fs.readdirSync('./routes', 'utf8');
-    routes.forEach(r => server.route(require(`./routes/${r}`)()));
+    routes.forEach(r => server.route(require(`./routes/${r}`)));
 
     /* start server */
     await server.start();

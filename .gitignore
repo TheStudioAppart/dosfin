@@ -25,3 +25,6 @@ hs_err_pid*
 # VS file
 *.suo
 .vs/*
+
+# Modules node
+node_modules/

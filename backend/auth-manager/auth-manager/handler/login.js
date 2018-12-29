@@ -1,7 +1,7 @@
 
 function login(hemera, opts) {
 
-    const { store, cfg } = opts;
+    const { store, cfg, communicator, da } = opts;
     const { collection } = cfg;
 
     return async (req) => {

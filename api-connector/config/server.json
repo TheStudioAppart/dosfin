@@ -1,0 +1,26 @@
+{
+    "api": { 
+        "host": "localhost",
+        "port": 25565,
+        "debug": { "request": ["info"] }
+    },
+    "nats": { 
+        "user": "ruser",
+        "password": "T0pS3cr3t",
+        "url": "nats://localhost:4222"
+    },
+    "hemera": {
+        "name": "api",
+        "logLevel": "error",
+        "childLogger": true,
+        "tag": "hemera-api"
+    },
+    "swagger": {
+        "info": { 
+            "title": "The Studio Appart - API documentation",
+            "version": "0.0.1"
+        },
+        "grouping": "tags",
+        "sortEndpoints": "ordered"
+    }
+}
