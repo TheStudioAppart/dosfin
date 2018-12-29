@@ -3,7 +3,7 @@ const Hp = require('hemera-plugin');
 const Manager = require('./manager');
 const cfg = require('../config/database');
 
-function hemeraAuth(hemera, opts, done) {
+function hemeraGroup(hemera, opts, done) {
     const {topic, store} = opts;
     const {collection} = cfg;
     const {joi} = hemera;
@@ -16,7 +16,7 @@ function hemeraAuth(hemera, opts, done) {
     done();
 }
 
-module.exports = Hp(hemeraAuth, {
+module.exports = Hp(hemeraGroup, {
     hemera: '>=6',
     name: require('./package.json').name,
     options: {}
