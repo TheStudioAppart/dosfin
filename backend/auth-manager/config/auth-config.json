@@ -1,0 +1,22 @@
+{
+    "topic": "auth-manager",
+    "store": "sql-store",
+    "logLevel": "info",
+    "pluginName": "auth-manager",
+    "nats": {
+        "url": "nats://localhost:4222",
+        "host": "localhost",
+        "port": 4222,
+        "user": "dev",
+        "pass": "pass"
+    },
+    "knex": {
+        "dialect": "mysql",
+        "connection": {
+            "host": "127.0.0.1",
+            "user": "user",
+            "password": "password",
+            "database": "todo"
+        }
+    }
+}
