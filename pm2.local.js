@@ -4,7 +4,7 @@ module.exports = {
             name: 'API',
             script: 'index.js',
             cwd: './api-connector',
-            "watch": true,
+            watch: true,
             env: { "NODE_ENV": "development" }
         },
         {
