@@ -1,7 +1,10 @@
 
 function manager(hemera, opts) {
 
-    // Add comminucator
+    const communicator = require('./communicator');
+    const da = require('./data-access');
+
+    opts = { ...opts, communicator, da };
     
     const create = require('./handler/create')(hemera, opts);
     const _delete = require('./handler/delete')(hemera, opts);

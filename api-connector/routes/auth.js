@@ -11,8 +11,8 @@ module.exports = [
             tags: ['api', 'auth'],
             validate: {
                 payload: {
-                    email: joi.string().email().required(),
-                    password: joi.string().required()
+                    Login: joi.string().email().required(),
+                    Password: joi.string().required()
                 }
             }
         },

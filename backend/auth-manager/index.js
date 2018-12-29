@@ -2,7 +2,7 @@ const Hemera = require('nats-hemera');
 const Nats = require('nats');
 
 const HemeraJoi = require('hemera-joi');
-const HemeraStore = require('hemera-mysql-store');
+const HemeraStore = require('hemera-sql-store');
 
 const cfg = require('./config/auth-config');
 const { logLevel, knex, nats, pluginName, topic} = cfg;
