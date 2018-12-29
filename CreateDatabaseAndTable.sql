@@ -308,7 +308,7 @@ CREATE TABLE IF NOT EXISTS `TheStudioAppart`.`T_Depense` (
   `AchaItemId` INT NULL,
   `ListAchatId` INT NULL,
   `AcheteurId` INT NULL,
-  `T_Depensecol` VARCHAR(45) NULL,
+  
   PRIMARY KEY (`Id`),
   INDEX `cttdepense_idx` (`CttId` ASC),
   INDEX `listachatitem_idx` (`AchaItemId` ASC),
@@ -324,7 +324,7 @@ CREATE TABLE IF NOT EXISTS `TheStudioAppart`.`T_Depense` (
     REFERENCES `TheStudioAppart`.`T_ListAchatItem` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `listachat`
+  CONSTRAINT `listachatdepense`
     FOREIGN KEY (`ListAchatId`)
     REFERENCES `TheStudioAppart`.`T_ListAchat` (`Id`)
     ON DELETE NO ACTION
