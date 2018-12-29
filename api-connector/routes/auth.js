@@ -32,13 +32,13 @@ module.exports = [
             description: 'account creation',
             tags: ['api', 'auth'],
             validate: {
-                payload: {
+                payload: joi.object({
                     email: joi.string().email().required(),
                     password: joi.string().required(),
                     confirmpassword: joi.string().required(),
                     nom: joi.string().required(),
                     prenom: joi.string().required()
-                }
+                })
             }
         },
         handler: async (request, h) => {
