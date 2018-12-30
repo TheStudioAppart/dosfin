@@ -1,6 +1,6 @@
 # dosfin
-le back-end en français
+Le back-end en français
 
-# requirements global
+# Global requirements
 PM2
 NATS

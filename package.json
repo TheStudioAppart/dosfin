@@ -1,0 +1,25 @@
+{
+  "name": "dosfin",
+  "version": "1.0.0",
+  "description": "Pas de dépendence dans ce script",
+  "main": "index.js",
+  "scripts": {
+    "exec": "for script in $(ls ./script/*.sh); do echo $script; chmod +x $script; done",
+    "db": "./script/database.sh",
+    "db:mock": "./script/database.sh mock",
+    "env": "./script/env.sh",
+    "env:check": "./script/env.sh check",
+    "env:help": "./script/env.sh help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheStudioAppart/dosfin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheStudioAppart/dosfin/issues"
+  },
+  "homepage": "https://github.com/TheStudioAppart/dosfin#readme"
+}
