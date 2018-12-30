@@ -9,7 +9,8 @@
     "db:mock": "./script/database.sh mock",
     "env": "./script/env.sh",
     "env:check": "./script/env.sh check",
-    "env:help": "./script/env.sh help"
+    "env:help": "./script/env.sh help",
+    "action:install": "./script/actions.sh install"
   },
   "repository": {
     "type": "git",

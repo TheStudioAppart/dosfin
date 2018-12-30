@@ -13,6 +13,7 @@
 
 ## TODO 
 
-- Add docker to env
-- Add nats to env
-- Add mock to database
+- Add docker to env,
+- Add nats to env,
+- Add mock to database,
+- Add install to actions (deps for each MS).
